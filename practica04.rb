@@ -61,15 +61,9 @@ print "\n"
 			for k in (0..4)
 				m_multipl[i][j] += matrizA[i][k] * matrizB[k][j]
 			end
+			print m_multipl[i][j], " "
 		end
 		print "\n"
 	end
 
 print "\n"
-
-for i in (0..4)
-	for j in (0..4)
-		print " ", m_multipl[i][j], " "
-	end
-	print "\n"
-end
