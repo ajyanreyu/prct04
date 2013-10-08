@@ -1,4 +1,5 @@
 #! /usr/bin/ruby
+# PROBANDO RAMA TENO
 
 @matrizA = []
 valor = 0
@@ -54,5 +55,25 @@ end
 suma
 
 
+
+print "\n"
+
+def producto
+	m_producto = []
+	
+	for i in (0..4)
+		m_producto[i] = []
+		for j in (0..4)
+			m_producto[i][j] = 0
+			for k in (0..4)
+				m_producto[i][j] += @matrizA[i][k] * @matrizB[k][j]
+			end
+			print m_producto[i][j], " "
+		end
+		print "\n"
+	end
+end
+
+producto
 
 print "\n"
