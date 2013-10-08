@@ -1,28 +1,28 @@
 #! /usr/bin/ruby
 
-matrizA = []
+@matrizA = []
 valor = 0
 for i in (0..4)
-	matrizA[i] = []
+	@matrizA[i] = []
 	for j in (0..4)
-		matrizA[i][j] = valor
+		@matrizA[i][j] = valor
 		valor +=  1
 	end
 end
 
-matrizB = []
+@matrizB = []
 valor = 0
 for i in (0..4)
-	matrizB[i] = []
+	@matrizB[i] = []
 	for j in (0..4)
-		matrizB[i][j] = valor
+		@matrizB[i][j] = valor
 		valor += 1
 	end
 end
 
 for i in (0..4)
 	for j in (0..4)
-		print " ", matrizA[i][j], " "
+		print " ", @matrizA[i][j], " "
 	end
 	print "\n"
 end
@@ -31,22 +31,28 @@ print "\n"
 
 for i in (0..4)
 	for j in (0..4)
-		print " ", matrizB[i][j], " "
+		print " ", @matrizB[i][j], " "
 	end
 	print "\n"
 end
 
 print "\n"
 
-	msuma = []
+def suma
+	m_suma = []
 	valor = 0
 	for i in (0..4)
-		msuma[i] = []
+		m_suma[i] = []
 		for j in (0..4)
-			msuma[i][j] = matrizA[i][j] + matrizB[i][j]
-			print msuma[i][j], " "
+			m_suma[i][j] = @matrizA[i][j] + @matrizB[i][j]
+			print m_suma[i][j], " "
 		end
 		print "\n"
 	end
+end
+
+suma
+
+
 
 print "\n"
